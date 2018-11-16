@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<video width="320" height="240" controls="controls">
+<video width="320" height="240" src="/i/movie.ogg" controls="controls">
   <source src="/i/movie.ogg" type="video/ogg">
   <source src="/i/movie.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -10,3 +10,22 @@ Your browser does not support the video tag.
 
 </body>
 </html>
+
+目前在不同的浏览器中支持Ogg,MPEG4,WebM。
+
+controls提供播放、暂停等控件
+src 指定播放的数据源
+<video>和</video>之间的内容是工不支持播放格式的或者不支持video元素的浏览器显示
+
+
+video标签属性
+autoplay      autoplay      如果出现该属性，则视频在就绪后马上播放。
+controls      controls      如果出现该属性，则显示控件，如播放键
+height        px            设置播放器的高度
+width         px            设置播放器的宽度
+preload       preload       如果出现该属性，则视频在页面加载时进行加载，并预备播放，如果使用了“”autoplay则忽略
+src           url           要播放视频的URL
+loop          loop          如果出现该属性，当媒介文件完成播放后会再次播放
+
+
+http://www.w3school.com.cn/html5/html_5_video_dom.asp
